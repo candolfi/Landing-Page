@@ -3,7 +3,7 @@
 body {
     height: 100vh;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
@@ -13,12 +13,6 @@ body {
     width: 100px;
     height: 50px;
     border: 1px solid black;
-}
-
-.illustration {
-    width: 100px;
-    height: 50px;
-    border: 1px solid lightblue;
 }
 
 .header {
@@ -47,6 +41,34 @@ a {
     color: #E5E7EB;
 }
 
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-title {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+.info-contents {
+    display: flex;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.illustration {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #3882F6;
+    border-radius: 10px;
+}
+
 .footer {
     background-color: #1F2937;
     color: #E5E7EB;
@@ -61,7 +83,6 @@ a {
 }
 
 .quotes {
-    flex-grow: 1;
     justify-content: center;
     align-items: center;
     background-color:#E5E7EB;
@@ -82,12 +103,54 @@ a {
     font-weight: bold;
     display: flex;
     align-self: flex-end;
+    padding-right: 16px;
 }
 
 .quote-container {
-    width: 800px;
+    width: 720px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 48px;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.action-container {
+    display: flex;
+    background-color: #3882F6;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    padding: 32px 80px;
+    margin: 64px 0px 64px 0px;
+    border-radius: 5px;
+}
+
+.action-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.call {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.instructions {
+    font-size: 18px;
+    color: #E5E7EB
+}
+button {
+    background-color: #3882F6;
+    border: none;
+    color: #E5E7EB;
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
+    padding: 2px 10px;
 }
