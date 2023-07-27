@@ -56,6 +56,38 @@ a {
     padding: 12px;
 }
 
-.hero, .quotes, .info{
+.hero, .quotes, .info, .action{
     flex-grow: 1;
+}
+
+.quotes {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    background-color:#E5E7EB;
+    display: flex;
+}
+
+.quote {
+    color: #1F2937;
+    display: flex;
+    font-weight:lighter;
+    font-style:italic;
+    font-size: 32px;
+}
+
+.citation {
+    color: #1F2937;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-self: flex-end;
+}
+
+.quote-container {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 48px;
 }
